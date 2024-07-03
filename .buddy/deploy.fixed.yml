@@ -1,0 +1,24 @@
+- pipeline: "deploy"
+  events:
+  - type: "PUSH"
+    refs:
+    - "refs/heads/main"
+  fail_on_prepare_env_warning: true
+  actions:
+  - action: "npm run build"
+    type: "BUILD"
+    docker_image_name: "library/node"
+    docker_image_tag: "20"
+    execute_commands:
+    - "# yarn install"
+    - "npm install"
+    - "npm run build"
+    shell: "BASH"
+  - action: "Transfer to 103.113.95.65"
+    type: "FTP"
+    input_type: "BUILD_ARTIFACTS"
+    local_path: "/dist"
+    remote_path: "/web"
+    login: "3mace5x23a223"
+    password: "secure!i5ihEwD2LdF20We3kUlFUQ==.G2K8t1SabP4CsRG7RonLtw=="
+    host: "103.113.95.65"

@@ -1,4 +1,4 @@
-- pipeline: "[部署] 硅云"
+- pipeline: "depoly"
   events:
   - type: "PUSH"
     refs:

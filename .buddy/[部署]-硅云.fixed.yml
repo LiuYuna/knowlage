@@ -11,3 +11,12 @@
     login: "3mace5x23a223"
     password: "secure!i5ihEwD2LdF20We3kUlFUQ==.G2K8t1SabP4CsRG7RonLtw=="
     host: "103.113.95.65"
+  - action: "npm run build"
+    type: "BUILD"
+    docker_image_name: "library/node"
+    docker_image_tag: "20"
+    execute_commands:
+    - "# yarn install"
+    - "npm install"
+    - "npm run build"
+    shell: "BASH"

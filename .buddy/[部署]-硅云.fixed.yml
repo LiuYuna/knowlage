@@ -1,4 +1,4 @@
-- pipeline: "depoly"
+- pipeline: "deploy"
   events:
   - type: "PUSH"
     refs:

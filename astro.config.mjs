@@ -1,15 +1,15 @@
 import tailwind from "@astrojs/tailwind"
 import Compress from "astro-compress"
 import icon from "astro-icon"
-import { defineConfig } from "astro/config"
+import {defineConfig} from "astro/config"
 import Color from "colorjs.io"
 import rehypeAutolinkHeadings from "rehype-autolink-headings"
 import rehypeKatex from "rehype-katex"
 import rehypeSlug from "rehype-slug"
 import remarkMath from "remark-math"
-import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs"
-import { GithubCardComponent } from "./src/plugins/rehype-component-github-card.mjs"
-import { AdmonitionComponent } from "./src/plugins/rehype-component-admonition.mjs"
+import {remarkReadingTime} from "./src/plugins/remark-reading-time.mjs"
+import {GithubCardComponent} from "./src/plugins/rehype-component-github-card.mjs"
+import {AdmonitionComponent} from "./src/plugins/rehype-component-admonition.mjs"
 import remarkDirective from "remark-directive" /* Handle directives */
 import remarkGithubAdmonitionsToDirectives from "remark-github-admonitions-to-directives";
 import rehypeComponents from "rehype-components"; /* Render the custom directive content */

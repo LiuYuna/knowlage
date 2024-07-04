@@ -7,11 +7,11 @@ category: Framework
 draft: false
 ---
 
+# SpringApplication.run(...)
+
 # @SpringBootApplication 作用
 
 # @EnableAutoConfiguration
-
-# SpringApplication.run(...)
 
 # @ComponentScan
 
